@@ -1,0 +1,12 @@
+#loader-overlay {
+    background-color: #ffffff;
+    z-index: 9999;
+    position: absolute;
+}
+
+
+#loader-overlay img {
+    position: absolute; 
+    height: 110vh;
+    width: 100vw;
+}

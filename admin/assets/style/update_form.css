@@ -1,0 +1,41 @@
+.modal-form {
+  position: fixed;
+  left: 40%;
+  top: 10%;
+  margin: auto;
+  height: -moz-max-content;
+  height: max-content;
+  width: 500px;
+  z-index: 1000;
+  background-color: #f88932;
+  border-radius: 2%;
+}
+.modal-form form {
+  padding: 25px;
+}
+.modal-form form > * {
+  width: 100%;
+}
+.modal-form form div {
+  width: 100%;
+}
+.modal-form form div label {
+  display: inline-block;
+  min-width: 25%;
+}
+.modal-form form div input,
+.modal-form form div select,
+.modal-form form div option {
+  border: 2px solid black;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.modal-form form .btn {
+  display: table;
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;
+} /*# sourceMappingURL=popup.css.map */

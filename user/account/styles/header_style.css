@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "traverse-nepal-hammersmith-one-regular";
+    src: url(../fonts/traverse-nepal-hammersmith-one-regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+    font-family: "traverse-nepal-hammersmith-one-regular";
+
+}
+.header-container{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 1184px;
+    min-width: 1184px;
+    margin-top: 5px;
+}
+
+.nav-container{
+    display: flex;
+}
+
+.logo-container{
+    margin-right: 28px;
+
+}
+
+.logo:hover{
+    transform: scaleX(1.1);
+}
+
+picture img{
+    width: 250px;
+    height: 100%;
+    display: block;
+    transition: 0.5s;
+}
+
+.navbar-container{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.nav-search-bar-container{
+    flex: 1 1 0;
+    margin-right: 6px;
+    opacity: 1;
+    transition: opacity 0.15s ease-in;
+}
+
+.nav-search-bar{
+    max-width: 350px;
+    width: 100%;
+
+}
+
+.search-bar form:hover {
+    transform: scale(1.1);
+    border: #f88932 solid 3px;
+
+}
+
+.search-bar{
+    position: relative;
+    width: 100%;
+    height: 42px;
+    margin: 0 auto;
+    z-index: 0;
+    text-align: left;
+}
+.whole-screen {
+    background: white;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity .15s ease;
+}
+.search-bar form{
+    border: 2px solid #073064;
+    border-radius: 21px;
+    padding: 0 12px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.search-bar form input{
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 0 0 31px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    border-radius: 0;
+    width: 100%;
+    border: none;
+    color: black;
+    appearance: none;
+    box-sizing: border-box;
+}
+.search-bar form input:focus,.search-bar form input:invalid{
+    box-shadow: none;
+    outline: none;
+}
+
+.search-bar form button{
+    font-size: 22px;
+    height: 38px;
+    left: 1px;
+    width: 42px;
+    padding-top: 0;
+    right: 8px;
+    pointer-events: none;
+    background: none;
+    display: flex;
+    line-height: 0;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    touch-action: manipulation;
+    appearance: none;
+    align-items: center;
+    top: 0;
+    justify-content: center;
+
+}
+
+.nav-menus{
+    display: grid;
+    gap: 8px;
+    grid-auto-flow: column;
+}
+
+.nav-menu:hover{
+    transform: scale(1.1);
+}
+
+.nav-menu{
+    border-radius: 20px;
+    height: 40px;
+    min-width: 40px;
+    padding: 6px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100px;
+}
+
+.nav-menu:hover{
+    background-color: #f88932;
+    color: #073064;
+    fill: #073064;
+    border-color:#073064 ;
+}
+
+.nav-menu:active{
+    background-color: #073064;
+    color: #f88932;
+    fill: #f88932;
+    border-color:#f88932;
+}
+
+.menu-name{
+    padding-top: 3px;
+}
+
+.profile-container{
+    position: relative;
+    width: 100%;
+    outline: none;
+    padding: 0;
+    line-height: 0;
+    background: none;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    appearance: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
+.profile-container a picture img{
+    object-fit: cover;
+    object-position: center;
+    height: 40px;
+    width: 40px;
+    border: #f88932 solid 2px;
+    border-radius:50% ;
+    transition: 0.5s;
+}
+.profile-container a picture img:hover{
+    transform: scale(1.2);
+    border: #073064 solid 3px;
+}

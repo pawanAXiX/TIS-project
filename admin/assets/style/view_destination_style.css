@@ -1,0 +1,338 @@
+@font-face {
+    font-family: "traverse-nepal-hammersmith-one-regular";
+    src: url(../../fonts/traverse-nepal-hammersmith-one-regular.ttf);
+}
+
+
+body{
+    overflow: hidden;
+    font-family: "traverse-nepal-hammersmith-one-regular";
+}
+
+.destination-page {
+    font-family: 'traverse-nepal-hammersmith-one-regular';
+}
+
+::-webkit-scrollbar{
+    background-color: #f6b98a;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #779dd0;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #073064;
+}
+
+.destination-container {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 1184px;
+    padding-bottom: 20px;
+}
+
+section.destination-title-container {
+    display: flex;
+    position: relative;
+    /* margin-top: 0px; */
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.destination-title {
+    flex: 1;
+    color: rgb(7, 48, 100);
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: 'traverse-nepal-hammersmith-one-regular';
+}
+
+.destination-share-like-container {
+    display: inline-flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destination-share-like-container div {
+    padding: 0 10px;
+    position: relative;
+}
+
+.destination-share-like-container div button {
+    border-radius: 16px;
+    height: 32px;
+    min-width: 32px;
+    padding: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.destination-share-like-container div button:hover {
+    background-color: #f88932;
+    color: #073064;
+    fill: #073064;
+    border-color: #073064;
+    transform: scale(1.2);
+}
+
+.destination-share-like-container div button:active {
+    background-color: #073064;
+    color: #f88932;
+    fill: #f88932;
+    border-color: #f88932;
+}
+
+.destination-desc-image-container {
+    padding: 32px 0;
+}
+
+.destination-desc-image {
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: 8fr 4fr;
+}
+
+
+.destination-image-container img {
+    border-radius: 20px;
+    width: 100%;
+    height: 400px;
+
+}
+
+.destination-desc-container {
+    padding: 0px 5px;
+    height: 400px;
+    overflow: auto;
+    overflow-x: hidden;
+    border-radius: 25px;
+}
+
+.destination-desc-container .desc-title {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'traverse-nepal-hammersmith-one-regular';
+    font-weight: bold;
+    font-size: x-large;
+    line-height: 1;
+    position: sticky;
+    top: 0;
+    padding-top: 5px;
+    background-color: white;
+    z-index: 1;
+    color: #073064;
+}
+
+.desc-text::first-letter {
+    font-size: xx-large;
+}
+
+.desc-text-place {
+    font-family: 'traverse-nepal-hammersmith-one-regular';
+    font-size: medium;
+}
+
+section.destination-information-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.dest-type {
+    display: flex;
+    align-content: center;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    align-items: flex-end;
+}
+
+/* if destination is accommodation */
+.desc-destination {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* for room-info-details */
+.room-info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.room-info-title{
+    color: #073064;
+    font-size: x-large;
+}
+.room-info {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.room-info span {
+    border: #073064 solid 3px;
+    border-radius: 10%;
+    height: 80px;
+    display: inline-grid;
+    align-items: center;
+    text-decoration: none;
+    color: #073064;
+    fill: #073064;
+    transition: 0.5s;
+    padding: 0 10px;
+    cursor: default;
+}
+.room-info span:hover {
+    border: #f88932 solid 3px;
+    color: #f88932;
+    fill: #f88932;
+}
+
+.room-info span div{
+    display: flex;
+    flex-direction: column;
+}
+
+.room-details,.room-rate-details{
+    font-size: xx-large;
+}
+
+
+
+.services-info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.services-info-title{
+    color: #073064;
+    font-size: x-large;
+}
+.services-info {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.services-info ul li{
+    font-size: medium;
+    list-style: none;
+}
+
+
+.open-close-info-title{
+    color: #073064;
+    font-size: x-large;
+}
+.open-close-room-info {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.open-close-info span {
+    border: #073064 solid 3px;
+    border-radius: 10%;
+    height: 80px;
+    display: inline-grid;
+    align-items: center;
+    text-decoration: none;
+    color: #073064;
+    fill: #073064;
+    transition: 0.5s;
+    padding: 0 10px;
+    cursor: default;
+}
+.open-close-info span:hover {
+    border: #f88932 solid 3px;
+    color: #f88932;
+    fill: #f88932;
+}
+
+.open-close-info span div{
+    display: flex;
+    flex-direction: column;
+}
+
+.open-details,.close-details{
+    font-size: xx-large;
+}
+
+
+/* end */
+/* For contact info section */
+.contact-info-details {
+    display: flex;
+    /* margin-top: 70px; */
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-info-title{
+    color: #073064;
+    font-size: x-large;
+}
+.contact-info {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-info a {
+    border: #073064 solid 3px;
+    border-radius: 10%;
+    width: 100%;
+    height: 100px;
+    display: inline-grid;
+    align-items: center;
+    text-decoration: none;
+    color: #073064;
+    fill: #073064;
+    transition: 0.5s;
+}
+.contact-info a:hover {
+    border: #f88932 solid 3px;
+    border-radius: 10%;
+    width: 100%;
+    height: 100px;
+    display: inline-grid;
+    align-items: center;
+    text-decoration: none;
+    background-color: #073064;
+    color: #f88932;
+    fill: #f88932;
+    transform: scale(1.1);
+}
+
+.contact-info a div{
+    display: flex;
+    flex-direction: column;
+}
+
+/* end */
+
+.recommended-title-bar {
+    margin-top: 5vh;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 1184px;
+    color: rgb(7, 48, 100);
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'traverse-nepal-hammersmith-one-regular';
+}
+
+.feed-container {
+    margin-top: 10px;
+}

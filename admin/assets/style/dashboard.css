@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "traverse-nepal-hammersmith-one-regular";
+  src: url(../../fonts/traverse-nepal-hammersmith-one-regular.ttf);
+}
+
+.dashboard {
+  border: 2px solid black;
+  height: 250px;
+  width: 500px;
+}
+
+.dashboard td {
+  text-align: center;
+}
+
+.attraction {
+  width: 1200px;
+  margin-top: 50px;
+  overflow: scroll;
+  border: 2px solid black;
+  background-color: rgba(248, 137, 50, 0.5);
+}
+
+.attraction tr {
+  height: 75px;
+}
+
+.attraction tr th {
+  text-align: center;
+  color: white;
+  background-color: rgba(7, 48, 100, 0.75);
+  height: 50px;
+  min-width: 100px;
+}
+
+.attraction tr td {
+  padding: 25px;
+  border-bottom: 2px solid black;
+  word-wrap: break-word;
+}
+
+.attraction a {
+  text-decoration: none;
+}
+
+.addPlace {
+  z-index: 200;
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.addPlace:hover {
+  cursor: pointer;
+}
+
+.main_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 55px;
+  margin-top: 70px;
+}
+
+.main_block a{
+  min-width: 30%;
+  text-decoration: none;
+}
+
+.main_block .block {
+  text-align: center;
+  border: #073064 solid 2px;
+  min-width: 30%;
+  border-radius: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 33px;
+  background-color: #073064;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main_block .block:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 10px 8px #f88932;
+}
+
+.main_block .block .block_icon {
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 3%;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.main_block .block .block_icon svg {
+  height: 60px;
+  width: 60px;
+  fill: #f88932;
+  stroke: #073064;
+  stroke-width: 10px; 
+}
+
+.main_block .block .block_num_name {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "traverse-nepal-hammersmith-one-regular";
+  color: white;
+}
+
+.main_block .block .block_num {}
+
+.main_block .block .block_num p {}
+
+.main_block .block .block_name {}
+
+/*# sourceMappingURL=dashboard.css.map */

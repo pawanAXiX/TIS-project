@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.dash_section {
+  margin: 50px;
+  padding: 40px;
+  height: 100%;
+  .search_div {
+    display: block;
+    .search {
+      margin-left: 25%;
+      height: 40px;
+      width: 40%;
+      border-radius: 25px;
+      padding: 20px;
+    }
+    i:hover {
+      cursor: pointer;
+    }
+  }
+  .dash_main {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    .place_card {
+      height: 200px;
+      width: 300px;
+      margin: 20px;
+      border: 2px solid black;
+      &:hover {
+        cursor: pointer;
+      }
+      .card_body {
+        height: 80%;
+        width: 100%;
+        .card_image {
+          height: 100%;
+          width: 100%;
+          img {
+            width: inherit;
+            height: inherit;
+          }
+        }
+      }
+      .card_foot {
+        height: 20%;
+        text-align: center;
+        padding: 10px;
+        font-size: 10px;
+      }
+    }
+  }
+  .next_page {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .page {
+      height: 100%;
+      background-color: #f88932;
+      margin-left: 5px;
+      text-align: center;
+      width: 20px;
+      display: inline-block;
+      border: 2px solid black;
+    }
+  }
+}

@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "traverse-nepal-hammersmith-one-regular";
+    src: url(../fonts/traverse-nepal-hammersmith-one-regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    background-color: #f6b98a;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #779dd0;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #073064;
+}
+
+body{
+    font-family: "traverse-nepal-hammersmith-one-regular";
+}
+
+.suggestion-form-map-container{
+    display: flex;
+    margin: 50px;
+}
+
+.suggestion-container{
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 1184px;
+}
+
+.suggestion-desc-title{
+    text-align: center;
+    font-size: xxx-large;
+    color: #073064;
+    padding: 5px 10px;
+}
+
+.suggestion-type-title{
+    text-align: center;
+    font-size: xx-large;
+    color: #f88932;
+    padding: 5px 10px;
+}
+
+.menu{
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 1184px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-box {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    margin: 0px 35px;
+}
+
+.menu-content {
+    background: rgb(255, 255, 255,0.5);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    border: 2px solid;
+    color: #073064;
+    display: flex;
+    gap: 12px;
+    min-width: 150px;
+    padding: 11px 16px;
+    transition: 0.5s;
+    text-align: left;
+    border-radius: 12px;
+    height: 100%;
+    align-items: flex-start;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: large;
+    fill: #073064;
+}
+
+.name {
+    margin-top: 4px;
+    width: 75%;
+    text-align: center;
+}
+
+.menu-icon {
+    margin: auto;
+}
+
+.menu-content:active {
+    background-color: #f88932;
+    color: #073064;
+    border-color: #073064;
+    fill: #073064;
+}
+
+.menu-content:hover {
+    background-color: #073064;
+    color: #f88932;
+    border-color: #f88932;
+    fill: #f88932;
+    transform: scale(1.1);
+}
+
+.suggestion-form-container{
+    width: 50%;
+}
+
+.suggestion-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-content: center;
+}
+
+.suggestion-form div input:not(#dest-submit,#dest-image),select{
+    height: 30px;
+    width: 50%;
+    font-size: large;
+    font-family: "traverse-nepal-hammersmith-one-regular";
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.suggestion-form div input:not(input[type="submit"]){
+    height: 30px;
+    width: 50%;
+    font-size: large;
+    font-family: "traverse-nepal-hammersmith-one-regular";
+}
+
+.suggestion-form div input[type="submit"]{
+    font-size: large;
+    font-family: "traverse-nepal-hammersmith-one-regular";
+}
+
+input[type="file"]{
+    cursor: pointer;
+}
+
+textarea{
+    width: 75%;
+    padding: 10px;
+    letter-spacing: 1px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    font-family: "traverse-nepal-hammersmith-one-regular";
+}
+
+.destination-coordinates{
+    display: flex;
+    flex-direction: row;
+}
+
+.dest-contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Style for number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.dest-submit {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.dest-submit input {
+    background: rgb(255, 255, 255,0.5);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    border: 2px solid;
+    color: #073064;
+    display: flex;
+    gap: 12px;
+    padding: 11px 16px;
+    transition: 0.5s;
+    text-align: left;
+    border-radius: 12px;
+    height: 100%;
+    align-items: flex-start;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: large;
+    fill: #073064;
+}
+
+.dest-submit input:hover{
+    background-color: #073064;
+    color: #f88932;
+    border-color: #f88932;
+    fill: #f88932;
+    transform: scale(1.1);
+}
+
+
+
+.dest-submit input:active{
+    background-color: #f88932;
+    color: #073064;
+    border-color: #073064;
+    fill: #073064;
+}
+
+
+.map-container{
+    width: 50%;
+}
+
+#form_map {
+    border: #073064 solid 5px;
+    height: 400px;
+    width: 100%;
+}

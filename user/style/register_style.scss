@@ -1,0 +1,69 @@
+* {
+  color: #073064;
+  font-weight: bold;
+}
+
+.register_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fieldset {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    border-radius: 10px;
+    background-color: rgba($color: #f88932, $alpha: 50%);
+
+    legend {
+      font-size: 36px;
+    }
+
+    .form_style {
+      display: flex;
+      flex-direction: column;
+
+      .text {
+        height: 5vh;
+        // width: 25vw;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .register_btn {
+        width: 10vw;
+        height: 5vh;
+        background-color: #f88932;
+        border-radius: 10px;
+        margin: 10px 30%;
+        display: inline-block;
+      }
+
+      .gender {
+        display: inline-block;
+        margin-bottom: 10px;
+
+        .gender_options {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          padding-top: 10px;
+        }
+      }
+
+      .reg_dob {
+        margin-bottom: 10px;
+        input[type=date] {
+          border-radius: 1em;
+      }
+      }
+
+      .radio_items {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

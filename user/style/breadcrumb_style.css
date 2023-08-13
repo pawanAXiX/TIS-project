@@ -1,0 +1,68 @@
+/* breadcrumb css */
+.breadcrumb-container {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 1184px;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+.breadcrumb-trails {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.breadcrumbs {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+li.crumb{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+li.crumb:not(:last-of-type)::after {
+    content: ">";
+    gap: 10px;
+    display: flex;
+    font-size: x-large;
+}
+
+.crumb:not(:last-of-type) a{
+    text-decoration: none;
+    color: #073064;
+    transition: 0.3s;
+    border-radius: 20px;
+    padding: 5px;
+    min-width: 80px;
+    border: #f88932 solid 2px;
+}
+
+.crumb:last-of-type a,.crumb:last-of-type {
+    text-decoration: none;
+    color: #f88932;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.crumb:not(:last-of-type) a:hover {
+    background-color: #f88932;
+    border: #073064 solid 2px;
+    color: #073064;
+    fill: #073064;
+    border-color: #073064;
+    transform: translateY(-5px);
+}
+
+/* breadcrumb css */

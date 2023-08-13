@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "traverse-nepal-hammersmith-one-regular";
+  src: url(../fonts/traverse-nepal-hammersmith-one-regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "traverse-nepal-hammersmith-one-regular", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #073064;
+  padding: 15px;
+  z-index: 99;
+}
+
+.logo-name {
+  padding-left: 20px;
+}
+
+/* I am here  */
+.logo-image:before {
+  content: "";
+  background-image: url(../img/traverse-nepal-website-favicon-white.png);
+  background-size: cover;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: -5px;
+  margin-left: -20px;
+}
+
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.submenu-active .menu-items {
+  transform: translateX(-56%);
+}
+
+.menu-title {
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.item i {
+  font-size: 12px;
+}
+
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: calc(-100% - 26px);
+  height: calc(100% + 100vh);
+  background: #073064;
+  display: none;
+}
+
+.show-submenu~.submenu {
+  display: block;
+}
+
+.submenu .menu-title {
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.submenu .menu-title i {
+  margin-right: 10px;
+}
+
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
+.sidebar.close~.navbar,
+.sidebar.close~.main {
+  left: 0;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #f88932;
+  cursor: pointer;
+}
+
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  z-index: 100;
+  min-height: 100vh;
+  padding: 50px;
+  background: #e7f2fd;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main h1 {
+  color: #073064;
+  font-size: 40px;
+  text-align: center;
+}
+
+.nav-bars:before {
+  content: "≡";
+}
+
+.arrow-right:before {
+  font-weight: bold;
+  content: ">";
+}
+
+.arrow-left:before {
+  font-weight: bold;
+  content: "<";
+}
+
+.sidebar .profile-details {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #073064;
+  padding: 6px 0;
+}
+
+.sidebar .profile-details .profile-content {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .profile-details img {
+  height: 52px;
+  width: 52px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 0px 14px 12px;
+  background: #f88932;
+  padding: 10px;
+}
+
+.sidebar .profile-details .admin-profile .admin-name,
+.sidebar .profile-details .admin-profile .admin-desc {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sidebar .profile-details .admin-profile .admin-desc {
+  font-size: 12px;
+}
+
+.sidebar .profile-details .logout {
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+  background: url(../img/logout.png);
+}
+
+/* for ajax table data in main content */
+
+/* for attraction table data */
+
+/* #table-content{
+    width: 100%;
+    overflow-y: auto;
+    height: 700px;
+    margin-top: 55px;
+}
+.place-image{
+    height: 60px;
+    width: 50px;
+    border: #073064 solid 3px;
+    border-radius: 5px;
+}
+.place-table{
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px;
+    border-collapse: collapse ;
+}
+
+tr,td{
+    border: #073064 solid 3px;
+    height: 60px;
+}
+
+td{
+    height: 600px;
+}
+
+thead{
+    background-color: rgb(7, 48, 100,0.25);
+    height: 50px;
+}
+
+th:hover{
+    color: #073064;
+    background-color:  rgb(248, 137, 50,0.25);
+}
+
+tr:hover{
+    background-color: rgb(248, 137, 50,0.25);
+}
+
+thead{
+    position: sticky; 
+    top: 0px; 
+} */

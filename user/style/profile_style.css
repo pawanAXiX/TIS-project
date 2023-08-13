@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "traverse-nepal-hammersmith-one-regular";
+    src: url(../fonts/traverse-nepal-hammersmith-one-regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "traverse-nepal-hammersmith-one-regular" !important;
+}
+
+::-webkit-scrollbar {
+    background-color: #f6b98a;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #779dd0;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #073064;
+}
+
+
+.profile-details-container {
+    width: 800px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 24px;
+    padding-right: 24px; */
+    max-width: 100%;
+    font-size: x-large;
+    text-align: center;
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details-title {
+    font-size: xxx-large;
+    cursor: default;
+    color: rgb(7, 48, 100);
+    transition: transform 0.3s ease;
+    position: relative;
+    /* border: #073064 solid 2px;
+    border-radius: 15px; */
+}
+
+.detail-icon {
+    fill: #f88932;
+}
+
+.details-title:hover {
+    color: #f88932;
+    transform: scaleX(1.1);
+}
+
+.detail-value {
+    cursor: default;
+    color: rgb(7, 48, 100);
+    transition: margin 0.3s ease, left 0.3s ease, transform 0.3s ease;
+
+    position: relative;
+}
+
+.detail-value:hover {
+
+    color: #f88932;
+    /* margin-left: 3px; */
+    transform: translateX(20px);
+
+}
+
+.detail {
+    display: flex;
+    gap: 30px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.user-pp-container{
+    margin: auto;
+}
+
+.pp {
+    height: 300px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.pp img {
+    width:80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+    transition: 0.5s;
+}
+.pp img:hover{
+    transform: translateY(-10px);
+}
+
+.pp-upload button {
+    margin: 10px;
+    background: transparent;
+    /* border: none; */
+    padding: 10px;
+    border-radius: 15px;
+    color: #f88932;
+    border: #073064 solid;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pp-upload button:hover {
+    background: #f88932;
+    color: #073064;
+    transform: translateY(-10px);
+}

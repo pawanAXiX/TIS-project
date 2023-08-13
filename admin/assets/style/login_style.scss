@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color:#073064;
+    font-weight: bold;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background: url("../img/home_page.jpg");
+  object-fit: contain; 
+
+}
+.error_text {
+  color: red;
+}
+.nav_admin {
+  width: 100vw;
+  height: 15vh;
+  padding: 10px;
+  img {
+    width: 15vw;
+    height: 10vh;
+  }
+}
+.login_container {
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+  // .label {
+  //   width: 20%;
+  //   h1 {
+  //     margin-bottom: 20px;
+  //     color: #073064;
+  //   }
+  // }
+    fieldset{
+    padding: 25px;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    border-radius: 10px;
+    background-color: rgba($color: #f88932, $alpha: 50%);
+    }
+  .form_style {
+    display: flex;
+    flex-direction: column;
+    label {
+      margin: 10px 0px;
+    }
+    .text {
+      height: 5vh;
+      width: 20vw;
+      margin-bottom: 10px;
+      border: 0px;
+      border-bottom: 1px solid black;
+      background: transparent;
+    }
+    .text:focus {
+      outline: none;
+    }
+    .login_btn {
+      margin-top: 20px;
+      width: 10vw;
+      height: 5vh;
+      margin-left: 25%;
+      background: transparent;
+      border-radius: 10px;
+    }
+  }
+}
